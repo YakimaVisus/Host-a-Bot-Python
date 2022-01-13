@@ -3,7 +3,7 @@
 heroku login  
 
 #Создаём приложение с Python билдпаком  
-cd %directory% $ heroku create %app_name% --buildpack http://github.com/heroku/heroku-buildpack-python.git  
+cd %directory%  heroku create %app_name% --buildpack http://github.com/heroku/heroku-buildpack-python.git  
 
 cd %directory% — перемещение в директорию где расположен бот  
 %app_name% — название вашего приложения  
