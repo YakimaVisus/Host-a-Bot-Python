@@ -1,10 +1,10 @@
 # Хостим свой скрипт (у мя бот) на Heroku 
 Логинимся через терминал/cmd  
-heroku login  
+> heroku login  
 
 #Создаём приложение с Python билдпаком  
-cd %directory%  
-heroku create %app_name% --buildpack http://github.com/heroku/heroku-buildpack-python.git  
+> cd %directory%  
+> heroku create %app_name% --buildpack http://github.com/heroku/heroku-buildpack-python.git  
 
 cd %directory% — перемещение в директорию где расположен бот  
 %app_name% — название вашего приложения  
@@ -37,10 +37,9 @@ web: %app_name%.py //исполняемый файл*, который будет
 worker: python %not_web_app%.py // vbot.py  
 
 # Загружаем бота через git  
-Не забудьте убрать settings.py из .gitignore  
 
-git init  
-heroku git:remote -a %app_name%  
-git add .  
-git commit -am "make it better"  
-git push heroku master  
+> git init  
+> heroku git:remote -a %app_name%  
+> git add .  
+> git commit -am "make it better"  
+> git push heroku master  
